@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.349),rgba(0, 81, 255, 0.274)) ,url(img/background.png);
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+h3{
+    font-size: 40px;
+    font-family: system-ui, -apple-system, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    color: rgba(8, 8, 228, 0.781);
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(240, 248, 255, 0.295);
+}
+h3 img{
+    width: 80px;
+    display: inline-block;
+}
+.chat{
+    color: bisque;
+    font-size: 22px;
+    text-align: center;
+    margin:0 10rem;
+    padding: 22px;
+}
+form{
+    text-align: center;
+    color: rgb(229, 255, 0);
+    font-size: 28px;
+    background-color: rgba(240, 248, 255, 0.336);
+    margin: 0 30rem;
+    padding: 75px;
+}
+form input{
+    width: 125px;
+    height: 25px;
+    font-size: 20px;
+}
+
+input[type=number]:focus {
+    background-color: rgba(185, 231, 247, 0.877);
+  }
+form button{
+    width: 112px;
+    height: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2rem;
+}
+button:hover{
+    background-color: rgba(1, 253, 148, 0.678);
+    color: rgba(255, 0, 0, 0.774);
+}
+
+.bubble img{
+    width: 50px ;
+ animation: bubble 5.2s linear infinite;
+    }
+
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 100px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+        width: 45px;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+        width: 35px;
+    }
+    80%{
+        opacity: 1;
+        width: 25px;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+        width: 40px;
+    }
+   
+}
+
+.bubble img:nth-child(1){
+    animation-delay:2s;
+    width: 10px;
+}
+.bubble img:nth-child(2){
+    animation-delay:1s;
+    width: 15px;
+}
+.bubble img:nth-child(3){
+    animation-delay:5s;
+    width: 20px;
+}
+.bubble img:nth-child(4){
+    animation-delay:3s;
+    width: 10px;
+}
+.bubble img:nth-child(5){
+    animation-delay:6s;
+    width: 30px;
+}
+.bubble img:nth-child(6){
+    animation-delay:6.8s;
+    width: 35px;
+}
+.bubble img:nth-child(7){
+    animation-delay:8s;
+    width: 15px;
+}
+.bubble img:nth-child(8){
+    animation-delay:7s;
+    width: 25px;
+}
+
+#output
+{
+    color: bisque;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 0 30rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+footer p{
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        color: rgb(0, 255, 221);
+        background: #26262654;
+        padding-top: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+}
+footer img{
+    width:7rem;
+    display: inline-block;
+    align-items: center;
+}
+@media screen and (max-width:480px) and (max-device-width: 768px){
+    h3 img{
+        width: 60px;
+        display: inline-block;
+    }
+    h3{
+        font-size: 25px;
+        padding: 15px;
+    }
+    .chat{
+        font-size: 18px;
+        text-align: center;
+        margin:1rem 2rem;
+        padding: 8px;
+    }
+    form{
+        font-size: 22px;
+        margin: 2rem 3rem;
+        padding: 35px;
+    }
+    form input{
+        width: 75px;
+        height: 28px;
+        font-size: 15px;
+    }
+    form button{
+        width: 100px;
+        height: 30px;
+        margin-top: 25px;
+        font-size: 11px;
+    }
+
+    #output{
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.363);
+    margin: 0 3rem;
+    font-size: 13px;
+}
+    footer img{
+        width:6rem;
+    }
+
+}
